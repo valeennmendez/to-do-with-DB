@@ -18,7 +18,7 @@ func main() {
 	r := gin.Default()
 
 	r.Use(cors.New(cors.Config{
-		AllowOrigins: []string{"http://127.0.0.1:3000"},
+		AllowOrigins: []string{"https://to-do-w-database.vercel.app/"},
 		AllowMethods: []string{"GET", "POST", "DELETE"},
 		AllowHeaders: []string{"Origin", "Content-Type", "Authoritazion"},
 	}))
